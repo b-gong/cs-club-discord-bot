@@ -1,0 +1,14 @@
+{
+  "name": "CS-Bot",
+  "version": "1.0.0",
+  "description": "CS Club Discord Bot",
+  "main": "bot.js",
+  "author": "whale",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
+    "request": "^2.88.0",
+    "winston": "^3.1.0"
+  }
+}
