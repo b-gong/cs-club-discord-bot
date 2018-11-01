@@ -1,6 +1,5 @@
 // Extract the required classes from the discord.js module
 const { Client, Attachment } = require('discord.js');
-var cheerio = require('cheerio');
 var request = require('request');
 
 // Create an instance of a Discord client
@@ -15,6 +14,10 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if(message.content.includes('skynet')) {
+        message.delete(2000);
+        message.channel.send("shh...");
+    }
     switch(message.content) {
         case '!birb':
             request('https://random.birb.pw/tweet/', function (error, response, html) {
